@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.zm.dubbo.service.ItemApi;
 import com.zm.dubbo.service.ItemResp;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +22,9 @@ public class RestTest {
     @Autowired
     private ItemApi api;
 
+    /**
+     *   http://localhost:8990/rest/get?num=10
+     */
     @GetMapping("/get")
     public String getRest(int num){
         if (num <= 0) {

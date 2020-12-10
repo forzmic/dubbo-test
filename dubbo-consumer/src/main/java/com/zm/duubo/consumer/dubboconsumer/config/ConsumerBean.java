@@ -51,6 +51,7 @@ public class ConsumerBean {
         config.setVersion(version);
         config.setConsumer(consumerConfig);
         config.setTimeout(200);
+        config.setCheck(false);
         ItemApi api = config.get();
         log.info("get dubbo consumer, zk={}, group={}, version={}", zkAddress, group, version);
         return api;

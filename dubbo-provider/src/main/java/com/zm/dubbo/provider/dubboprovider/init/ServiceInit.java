@@ -43,7 +43,7 @@ public class ServiceInit {
         applicationConfig.setName("dubbo-test");
 
         ProviderConfig config = new ProviderConfig();
-        config.setTimeout(1000);
+        config.setTimeout(1234);
 
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setProtocol("zookeeper");
